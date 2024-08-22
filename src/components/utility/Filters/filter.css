@@ -1,0 +1,40 @@
+.filter {
+  border: 0.1rem solid #eee;
+  padding: 1rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  gap: 0.5rem;
+  border-radius: 0.8rem;
+  color: #aaa;
+  font-weight: 300;
+  min-height: 5rem;
+}
+.filter-count {
+  font-size: 1.2rem;
+  background-color: #ef4f5f;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  color: #fff;
+}
+
+.filter .filter-text {
+  font-size: 1.4rem;
+}
+.filter-icon svg {
+  display: block;
+  height: 1.8rem;
+}
+.filter:hover {
+  background-color: #eee;
+}
+.filter.active {
+  background-color: #ef4f5f;
+  color: #fff;
+}
+.filter.active .filter-count {
+  background-color: #fff;
+  color: #000;
+}

@@ -1,0 +1,13 @@
+.banner {
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 4rem;
+  cursor: pointer;
+}
+.banner-img {
+  object-fit: contain;
+  width: inherit;
+  height: inherit;
+}

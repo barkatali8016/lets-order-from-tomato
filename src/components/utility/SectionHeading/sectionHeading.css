@@ -1,0 +1,9 @@
+.section-heading {
+  margin-top: 4rem;
+}
+.section-heading .heading-primary {
+  color: #333;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
