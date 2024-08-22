@@ -1,0 +1,13 @@
+.breadcrumb {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  font-size: 1.2rem;
+  margin-top: 3rem;
+  justify-content: start;
+  color: #333;
+  letter-spacing: 0.03rem;
+}
+.breadcrumb .active {
+  color: #aaa;
+}

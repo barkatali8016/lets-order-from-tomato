@@ -1,0 +1,11 @@
+.tabs {
+  margin-top: 1rem;
+  border-bottom: 0.1rem solid #ddd;
+}
+.tabs .tab-list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+}

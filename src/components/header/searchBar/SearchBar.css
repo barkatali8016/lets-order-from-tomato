@@ -1,0 +1,194 @@
+.search-bar {
+  border: 0.2rem solid #eee;
+  border-radius: 0.5rem;
+  grid-template-columns: 1fr 0.2fr 2fr;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0rem 0.1rem 1rem #ddd;
+  min-height: 5.2rem;
+  padding: 0.5rem;
+}
+.pipe {
+  color: #999;
+  font-size: 2rem;
+  margin-left: 3.6rem;
+}
+.search-restaurant {
+  grid-template-columns: 5% 95%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  margin-left: 1rem;
+}
+
+.search-location {
+  grid-template-columns: 5% 95%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+  z-index: 1;
+}
+.search-location .caret {
+  height: 1.4rem;
+  position: absolute;
+  top: 0.4rem;
+  right: -4rem;
+  display: inline-block;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  font-weight: 300;
+  letter-spacing: 0.02rem;
+  font-size: 1.6rem;
+}
+.search-bar input:focus {
+  outline: none;
+  background: transparent;
+}
+.map-pin {
+  color: #ef4f5f;
+}
+.search-icon {
+  color: #333;
+}
+
+/* Search options */
+
+.location-search-option {
+  width: 36rem;
+  max-height: 45rem;
+  background: rgba(255, 255, 255, 2);
+  border-radius: 0.8rem;
+  position: absolute;
+  left: -0.5rem;
+  overflow: auto;
+  border: 1px solid rgb(207, 207, 207);
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+  top: 5rem;
+  opacity: 1;
+  transition: opacity 0.25s, top 0.25s;
+  z-index: 10;
+  display: inline-block;
+}
+.location-search-option ul li {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+  padding: 2rem 1rem 2rem 1rem;
+  border-bottom: 1px solid #eee;
+  cursor: pointer;
+}
+.location-search-option ul li:hover {
+  background-color: #eee;
+}
+.location-search-option ul li svg {
+  height: 2rem;
+}
+.icon-gps,
+.icon-plus {
+  color: #ef4f5f;
+}
+.location-type {
+  font-size: 2rem;
+  color: #ef4f5f;
+  margin-bottom: 1rem;
+}
+.location-info {
+  font-size: 1.2rem;
+  color: #333;
+}
+.saved-addresses-text {
+  font-size: 2rem;
+  margin: 2rem 2rem 1rem 2rem;
+}
+.saved-adresses .location-type {
+  color: #333;
+  font-size: 1.6rem;
+}
+/* Restaurant Options  */
+.search-option-restaurant-dish {
+  width: 47rem;
+  max-height: 70rem;
+  border-radius: 0.8rem;
+  position: absolute;
+  overflow: auto;
+  top: 6rem;
+  visibility: visible;
+  opacity: 1;
+  border: 1px solid rgb(207, 207, 207);
+  box-shadow: rgba(28, 28, 28, 0.08) 0px 2px 8px;
+  transition: opacity 0.25s, top 0.25s;
+  background: rgba(255, 255, 255, 2);
+}
+
+.search-restaurant-list {
+  list-style: none;
+}
+.search-restaurant-list img {
+  height: 8.4rem;
+  width: 8.4rem;
+  border-radius: 1rem;
+}
+.search-restaurant-list li {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  padding: 2rem 1rem;
+}
+.search-restaurant-list li:hover {
+  background-color: #eee;
+}
+.restaurant-details {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.restaurant-name {
+  font-size: 1.6rem;
+}
+.restaurant-ratting {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.restaurant-ratting span {
+  background-color: rgb(38, 126, 62);
+  padding: 0.3rem 0.3rem 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  color: #fff;
+  margin-right: 0.5rem;
+}
+.start-delivery {
+  margin-left: 0.5rem;
+}
+.restaurant-ratting span svg {
+  height: 1rem;
+}
+
+.restaurant-address {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #444;
+}
+.order-now {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ef4f5f;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  outline: none;
+}
+.order-now svg {
+  height: 1.4rem;
+}
+.delivery-time {
+  font-size: 1.2rem;
+  font-family: 300;
+  color: #666;
+}

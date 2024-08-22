@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  /* font-size: 10px; 
+  10px / 16px = 62.5 %
+  */
+
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  color: #333;
+  overflow-x: hidden;
+}
+
+/* COMMON STYLE */
+.grid {
+  display: grid;
+}
+.d-none {
+  display: none;
+}

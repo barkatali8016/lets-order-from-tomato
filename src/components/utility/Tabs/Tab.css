@@ -1,0 +1,38 @@
+.tab {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: start;
+  align-items: center;
+  padding: 2rem;
+  cursor: pointer;
+  transition: border 0.75s ease-out;
+  border-bottom: 0.2rem solid #fff;
+  animation: 1.5s linear 0s infinite normal forwards running jCOzbu;
+}
+.tab .illustration-image {
+  height: 3rem;
+  width: 3rem;
+}
+.tab .illustration-text {
+  font-size: 2rem;
+  font-weight: 400;
+  letter-spacing: 0.03rem;
+  color: #666;
+}
+.tab .illustration {
+  border-radius: 5rem;
+  padding: 1.3rem;
+  border: 0.1rem solid #f0f0f0;
+  background-color: #f0f0f0;
+}
+.tab.active {
+  border-bottom: 0.2rem solid #ef4f5f;
+}
+.tab.active .illustration {
+  border: 0.1rem solid rgba(230, 243, 243, 1);
+  background-color: rgba(230, 243, 243, 1);
+}
+.tab.active .illustration-text {
+  color: #ef4f5f;
+}
