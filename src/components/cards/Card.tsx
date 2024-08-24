@@ -1,5 +1,5 @@
 import { SealPercent, Star } from "@phosphor-icons/react";
-
+import "./card.css";
 type CardPropType = {
   cardImage: string;
   discountValue: number;
@@ -8,11 +8,11 @@ type CardPropType = {
 export default function Card({ cardImage, discountValue }: CardPropType) {
   return (
     <div className="card">
-      <div className="card-img">
+      <div className="card-img-section">
         <a href="./">
           <div className="card-img-holder">
             <p className="promoted">Promoted</p>
-            <img src={cardImage} alt="Card Image" />
+            <img className="card-img" src={cardImage} alt="Card Image" />
             {discountValue && (
               <div className="offer-text">
                 <SealPercent size={32} weight="bold" />
@@ -41,8 +41,8 @@ export default function Card({ cardImage, discountValue }: CardPropType) {
         <div>
           <p className="open-close-info"> Closes in 1 hour 6 minutes</p>
         </div>
-        <div>
-          <p className="distance"> 8.6 km</p>
+        <div className="distance">
+          <p> 8.6 km</p>
         </div>
       </div>
     </div>

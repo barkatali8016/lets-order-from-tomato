@@ -1,5 +1,5 @@
 .main-header {
-  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-columns: 10% 86%;
   gap: 2rem;
   padding-top: 0.5rem;
   color: #222;

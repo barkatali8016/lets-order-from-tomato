@@ -1,8 +1,19 @@
+.profile-menu-back-drop {
+  content: "";
+  background: rgba(0, 0, 0, 0.001);
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
 .header-menu {
-  grid-template-columns: 10% 90%;
-  justify-content: start;
+  grid-template-columns: 25% 70%;
+  justify-content: space-between;
   align-items: center;
   gap: 2rem;
+  position: relative;
 }
 .header-menu .profile-img {
   width: 4rem;
@@ -11,8 +22,43 @@
   display: inline-block;
 }
 .header-menu .profile-name {
-  font-size: 1.8rem;
+  cursor: pointer;
+  font-size: 1.6rem;
 }
 .caret {
-  display: none;
+  display: inline-block;
+  position: absolute;
+  height: 2rem;
+  right: -5rem;
+  top: 1rem;
+  cursor: pointer;
+  transform: rotate(0deg);
+  transition: transform 0.25s ease-in-out;
+  cursor: pointer;
+}
+.profile-menu {
+  position: absolute;
+  right: -5rem;
+  top: 5rem;
+  z-index: 10;
+  display: block;
+  min-width: 15rem;
+  min-height: fit-content;
+  transition: transform 0.5s ease-in-out;
+}
+.profile-menu ul {
+  list-style: none;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.25);
+}
+.profile-menu ul li {
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: #333;
+  cursor: pointer;
+}
+.profile-menu ul li:hover {
+  background-color: #eee;
+  border-radius: 0.5rem;
 }

@@ -1,5 +1,6 @@
 import RESPONSE from "../utility/RESPONSE";
 import Card from "./Card";
+import "./cards.css";
 export default function Cards() {
   return (
     <section className="cards">
