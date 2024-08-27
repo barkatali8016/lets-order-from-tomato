@@ -1,3 +1,5 @@
+import { useRef } from "react";
+import Dialog from "../Modal/Modal";
 import Filter from "./Filter";
 import "./Filters.css";
 const FILTERS = [
@@ -41,10 +43,30 @@ const FILTERS = [
   },
 ];
 export default function Filters() {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  const dialog = useRef<any>(null);
+
+  const handleFilterSelection = (id: string) => {
+    if (id === FILTERS[0].id) {
+      dialog.current?.open();
+    }
+  };
+
   return (
     <section className="filters">
+      <Dialog
+        title={"Filter Options"}
+        description={
+          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aspernatur, doloremque!"
+        }
+        ref={dialog}
+      />
       {FILTERS.map((filter) => (
-        <Filter key={filter.id} {...filter} />
+        <Filter
+          key={filter.id}
+          {...filter}
+          onFilterSection={handleFilterSelection}
+        />
       ))}
     </section>
   );
